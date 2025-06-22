@@ -52,7 +52,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .podcast-card{
@@ -60,7 +60,49 @@ body{
     height: 250px;
     border-radius: 15px;
     background-color: #cbcfba;
+    background-size: cover;
+    background-position: center;
     margin-top: 20px;
+}
+
+.card1{
+    background-image: url(assets/something\ was\ wrong.jpeg);
+}
+
+.card2{
+    background-image: url(assets/this\ is\ actually\ happening.png);
+}
+
+.card3{
+    background-image: url(assets/american\ history\ tellers.png);
+}
+
+.card4{
+    background-image: url(assets/scamfluencers.png);
+}
+
+.card5{
+    background-image: url(assets/killer\ psyche.png);
+}
+
+.card6{
+    background-image: url(assets/even\ the\ rich.png);
+}
+
+.card7{
+    background-image: url(assets/against\ the\ odds.png);
+}
+
+.card8{
+    background-image: url(assets/this\ podcast\ will\ kill\ you.jpeg);
+}
+
+.card9{
+    background-image: url(assets/british\ scandal.png);
+}
+
+.card10{
+    background-image: url(assets/tides\ of\ history.jpeg);
 }
 
 .podcast-card:hover .info-card{
@@ -72,7 +114,7 @@ body{
     width: 290px;
     height: 250px;
     border-radius: 15px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.8);
     position: absolute;
     opacity: 0;
     visibility: hidden;
@@ -101,8 +143,8 @@ body{
 /* Modal Section */
 
 .modal-card{
-  width: 750px;
-  height: 550px;
+  width: 950px;
+  height: 450px;
   background-color: #f5eeda;
   border: none;
   border-radius: 15px;
@@ -131,7 +173,7 @@ body{
 }
 
 #close-btn{
-    margin-left: 580px;
+    margin-left: 600px;
     border: none;
     background-color: #f5eeda;
     font-size: 18px;
@@ -157,8 +199,12 @@ body{
 }
 
 #modal-content{
+    width: 700px;
     margin-top: 30px;
     margin-left: 30px;
+    background-color: #cbcfba;
+    border-radius: 16px;
+    padding: 10px;
 }
 
 #modal-content h3{
@@ -166,7 +212,7 @@ body{
 }
 
 #modal-content h4{
-    margin-top: 150px;
+    margin-top: 20px;
 }
 
 #modal-genre{
@@ -174,4 +220,101 @@ body{
     height: 25px;
     border-radius: 16px;
     background-color: #cbcfba;
+}
+
+.seasons{
+    margin-top: 50px;
+}
+
+#seasons-card{
+    width: 700px;
+    height: 80px;
+    border: 2px solid #cbcfba;
+    border-radius: 16px;
+    margin-top: 10px;
+}
+
+
+/* ===== MOBILE RESPONSIVE: Small screens up to 768px ===== */
+@media screen and (max-width: 768px) {
+
+  .header-section {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  #logo {
+    margin-left: 0;
+  }
+
+  #search-bar {
+    width: 80%;
+    margin: 10px 0;
+    margin-left: 0;
+  }
+
+  #profile {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .main-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .podcast-card,
+  .info-card {
+    width: 90vw;
+    height: auto;
+    min-height: 250px;
+  }
+
+  .info-card {
+    position: relative;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .info-card-content {
+    margin-top: 40px;
+  }
+
+  .modal-card {
+    width: 90vw;
+    height: auto;
+    padding: 15px;
+  }
+
+  .title-btn {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #close-btn {
+    margin-left: 0;
+    align-self: flex-end;
+  }
+
+  .img-description {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #modal-img,
+  #modal-content {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  #modal-genre {
+    width: auto;
+    text-align: center;
+  }
+
+  #seasons-card {
+    width: 90%;
+  }
 }
