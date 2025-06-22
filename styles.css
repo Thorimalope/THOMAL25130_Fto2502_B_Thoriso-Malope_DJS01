@@ -63,6 +63,11 @@ body{
     margin-top: 20px;
 }
 
+.podcast-card:hover .info-card{
+    opacity: 1;
+    visibility: visible;
+}
+
 .info-card{
     width: 290px;
     height: 250px;
@@ -74,17 +79,29 @@ body{
     transition: 0.3s;
     font-size: 15px;
     text-align: center;
+    color: #f5eeda;
 }
 
-.podcast-card:hover .info-card{
-    opacity: 1;
-    visibility: visible;
+.info-card-content{
+    margin-top: 70px;
+}
+
+.info-card-content h2, h4{
+    margin-bottom: 10px;
+}
+
+#info-genre{
+    width: 100%;
+    border-radius: 16px;
+    background-color: #f5eeda;
+    color: black;
+    margin-bottom: 10px;
 }
 
 /* Modal Section */
 
 .modal-card{
-  width: 550px;
+  width: 750px;
   height: 550px;
   background-color: #f5eeda;
   border: none;
@@ -100,11 +117,61 @@ body{
     height: 100vh;
     width: 100vw;
     display: flex;
-    /*display: none;*/
+    display: none;
     align-items: center;
     justify-content: center;
 }
 
 .title-btn{
     display: flex;
+}
+
+.title-btn h1{
+    font-size: 10px;
+}
+
+#close-btn{
+    margin-left: 580px;
+    border: none;
+    background-color: #f5eeda;
+    font-size: 18px;
+    color: black;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+#close-btn:hover{
+    color: #cbcfba;
+}
+
+.img-description{
+    display: flex;
+}
+
+#modal-img{
+    width: 200px;
+    height: 200px;
+    background-color: #cbcfba;
+    border-radius: 16px;
+    margin-top: 30px;
+}
+
+#modal-content{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#modal-content h3{
+    margin-bottom: 10px;
+}
+
+#modal-content h4{
+    margin-top: 150px;
+}
+
+#modal-genre{
+    width: 100px;
+    height: 25px;
+    border-radius: 16px;
+    background-color: #cbcfba;
 }
